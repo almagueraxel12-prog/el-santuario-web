@@ -1,0 +1,139 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff - El Santuario</title>
+
+<style>
+body{
+    margin:0;
+    background:#0a0a0a;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+nav{
+    background:#111;
+    padding:20px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+}
+
+.staff-container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.staff-card{
+    background:#151515;
+    border:1px solid #333;
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.staff-card h2{
+    color:#ffd700;
+}
+
+.staff-card p{
+    color:#ccc;
+}
+
+.discord{
+    background:#5865F2;
+    margin-top:40px;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.discord h2{
+    margin-top:0;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#43b581;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+    <a href="index.html">🏠 Inicio</a>
+    <a href="rangos.html">👑 Rangos</a>
+    <a href="staff.html">🛡️ Staff</a>
+    <a href="normas.html">📜 Normas</a>
+</nav>
+
+<header>
+    <h1>🛡️ Equipo Staff</h1>
+    <p>Conoce a quienes mantienen El Santuario.</p>
+</header>
+
+<div class="staff-container">
+
+    <div class="staff-card">
+        <h2>⚡ Zeus</h2>
+        <p><strong>Owner</strong></p>
+        <p>Fundador y máximo responsable del servidor.</p>
+    </div>
+
+    <div class="staff-card">
+        <h2>🔥 Juez del Infierno</h2>
+        <p><strong>Admin</strong></p>
+        <p>Encargado de la administración y supervisión general.</p>
+    </div>
+
+    <div class="staff-card">
+        <h2>👑 Patriarca</h2>
+        <p><strong>Moderador</strong></p>
+        <p>Ayuda a mantener el orden y resolver problemas de los jugadores.</p>
+    </div>
+
+    <div class="discord">
+        <h2>¿Quieres formar parte del Staff?</h2>
+        <p>Únete a nuestro Discord y espera cuando se abran postulaciones.</p>
+        <a class="boton" href="https://discord.gg/CBc3cjuFce">🎮 Unirse al Discord</a>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 El Santuario
+</footer>
+
+</body>
+</html>
+```
