@@ -1,29 +1,34 @@
+```html
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rangos - El Santuario</title>
+<title>Rangos | El Santuario</title>
 
 <style>
 body{
-    font-family: Arial, sans-serif;
-    background:#121212;
-    color:white;
     margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#0f172a;
+    color:white;
 }
 
 header{
+    background:linear-gradient(90deg,#6a00ff,#b100ff);
     text-align:center;
     padding:40px;
-    background:#1e1e1e;
+}
+
+header h1{
+    margin:0;
+    font-size:45px;
 }
 
 nav{
-    background:#0d0d0d;
-    padding:15px;
+    background:#1e293b;
     text-align:center;
+    padding:15px;
 }
 
 nav a{
@@ -33,128 +38,185 @@ nav a{
     font-weight:bold;
 }
 
-h1{
-    text-align:center;
+nav a:hover{
+    color:#c084fc;
 }
 
-.rangos{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:20px;
+.contenedor{
+    max-width:1300px;
+    margin:auto;
     padding:40px;
 }
 
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
 .rango{
-    width:280px;
-    background:#1e1e1e;
+    background:#1e293b;
     border-radius:15px;
-    padding:20px;
+    padding:25px;
     text-align:center;
+    transition:.3s;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
 }
 
-.rango h2{
-    margin-top:0;
+.rango:hover{
+    transform:translateY(-10px);
 }
 
-.bronce{
-    border:3px solid #cd7f32;
-}
+.vip{border-top:6px solid #00e676;}
+.bronce{border-top:6px solid #b87333;}
+.plata{border-top:6px solid #c0c0c0;}
+.oro{border-top:6px solid gold;}
+.divino{border-top:6px solid #bb00ff;}
 
-.plata{
-    border:3px solid #c0c0c0;
-}
-
-.oro{
-    border:3px solid #ffd700;
-}
-
-.divino{
-    border:3px solid #9b59b6;
+.precio{
+    font-size:35px;
+    color:#00ff99;
+    margin:15px 0;
 }
 
 ul{
+    list-style:none;
+    padding:0;
     text-align:left;
 }
 
-.boton{
-    display:inline-block;
-    margin-top:15px;
-    padding:10px 20px;
-    background:#2ecc71;
+li{
+    margin:10px 0;
+}
+
+button{
+    margin-top:20px;
+    background:#8a2be2;
     color:white;
-    text-decoration:none;
+    border:none;
+    padding:12px 25px;
     border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#a64dff;
 }
 
 footer{
+    background:#111827;
     text-align:center;
     padding:20px;
-    background:#0d0d0d;
+    margin-top:50px;
 }
 </style>
-
 </head>
 
 <body>
 
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="rangos.html">Rangos</a>
-    <a href="staff.html">Staff</a>
-    <a href="normas.html">Normas</a>
-</nav>
-
 <header>
-    <h1>💎 Rangos de El Santuario 💎</h1>
-    <p>Obtén beneficios exclusivos dentro del servidor.</p>
+<h1>👑 Rangos Premium</h1>
+<p>Obtén ventajas exclusivas en El Santuario.</p>
 </header>
 
-<div class="rangos">
+<nav>
+<a href="index.html">Inicio</a>
+<a href="rangos.html">Rangos</a>
+<a href="tienda.html">Tienda</a>
+<a href="staff.html">Staff</a>
+<a href="normas.html">Normas</a>
+</nav>
 
-```
+<div class="contenedor">
+
+<div class="grid">
+
+<div class="rango vip">
+<h2>⭐ VIP</h2>
+<div class="precio">$2 USD</div>
+
+<ul>
+<li>✔ /workbench</li>
+<li>✔ /ec</li>
+<li>✔ /back</li>
+<li>✔ /hat</li>
+<li>✔ 2 Homes</li>
+<li>✔ Kit VIP Diario</li>
+<li>✔ 1 Llave Común diaria</li>
+</ul>
+
+<button>Comprar</button>
+</div>
+
 <div class="rango bronce">
-    <h2>🥉 Bronce</h2>
-    <ul>
-        <li>Kit Bronce</li>
-        <li>Más homes</li>
-        <li>Prefijo especial</li>
-    </ul>
+<h2>🥉 Bronce</h2>
+<div class="precio">$5 USD</div>
+
+<ul>
+<li>✔ Todo lo anterior</li>
+<li>✔ /feed</li>
+<li>✔ 3 Homes</li>
+<li>✔ Kit Bronce</li>
+<li>✔ Llave Bronce diaria</li>
+</ul>
+
+<button>Comprar</button>
 </div>
 
 <div class="rango plata">
-    <h2>🥈 Plata</h2>
-    <ul>
-        <li>Todo lo de Bronce</li>
-        <li>Más dinero diario</li>
-        <li>Más homes</li>
-    </ul>
+<h2>🥈 Plata</h2>
+<div class="precio">$10 USD</div>
+
+<ul>
+<li>✔ Todo lo anterior</li>
+<li>✔ /repair</li>
+<li>✔ 5 Homes</li>
+<li>✔ Kit Plata</li>
+<li>✔ Llave Plata diaria</li>
+</ul>
+
+<button>Comprar</button>
 </div>
 
 <div class="rango oro">
-    <h2>🥇 Oro</h2>
-    <ul>
-        <li>Todo lo de Plata</li>
-        <li>Kit Oro</li>
-        <li>Beneficios exclusivos</li>
-    </ul>
+<h2>🥇 Oro</h2>
+<div class="precio">$15 USD</div>
+
+<ul>
+<li>✔ Todo lo anterior</li>
+<li>✔ /anvil</li>
+<li>✔ /smithingtable</li>
+<li>✔ 8 Homes</li>
+<li>✔ 2 Llaves Oro diarias</li>
+<li>✔ Kit Oro</li>
+</ul>
+
+<button>Comprar</button>
 </div>
 
 <div class="rango divino">
-    <h2>👑 Divino</h2>
-    <ul>
-        <li>Todo lo de Oro</li>
-        <li>Kit Divino</li>
-        <li>Máximos beneficios</li>
-        <li>Acceso anticipado a novedades</li>
-    </ul>
+<h2>💎 Divino</h2>
+<div class="precio">$20 USD</div>
+
+<ul>
+<li>✔ Todo lo anterior</li>
+<li>✔ /fly en el Spawn</li>
+<li>✔ 15 Homes</li>
+<li>✔ Kit Divino</li>
+<li>✔ 2 Llaves Divino diarias</li>
+<li>✔ 2 Llaves Oro diarias</li>
+</ul>
+
+<button>Comprar</button>
 </div>
-```
+
+</div>
 
 </div>
 
 <footer>
-    🚀 Próximamente más rangos
+© 2026 El Santuario | Todos los derechos reservados.
 </footer>
 
 </body>
